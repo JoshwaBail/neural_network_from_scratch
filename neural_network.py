@@ -53,7 +53,7 @@ class Network:
             activations.append(activation)
        
         # backward pass
-        delta = self.mse_derivative(activations[-1], y) * sigmoid_prime(zs[-1])
+        delta = mse_derivative(activations[-1], y) * sigmoid_prime(zs[-1])
         new_b[-1] = delta
         new_w[-1] = np.dot(delta, activations[-2].transpose())
        
