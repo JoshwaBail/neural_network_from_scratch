@@ -6,6 +6,7 @@ from tqdm import tqdm
 from activation_functions import sigmoid, sigmoid_prime
 from cost_functions import mse_derivative
  
+ 
 class Network:
     # sizes is a list of the number of nodes in each layer
     def __init__(self, sizes):
